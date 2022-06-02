@@ -40,4 +40,4 @@ entrypoint ["dotnet", "SneakerApi.dll"]
 expose 5000
 
 #We need to change our ASP.Net apllication to also start listening to 5000
-env ASPNETCORE_URLS=https://+:5000
+env ASPNETCORE_URLS=http://+:5000
