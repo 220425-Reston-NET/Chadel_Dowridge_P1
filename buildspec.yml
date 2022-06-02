@@ -24,7 +24,7 @@ phases:
       - echo 'Creating the publish folder for the app'
       - dotnet publish -c Relase -o publish
 
-  artifacts:
-    files:
+artifacts:
+  files:
       - 'Dockerfile'
       - 'publish/**/*'
