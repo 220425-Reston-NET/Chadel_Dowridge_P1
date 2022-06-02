@@ -1,38 +1,43 @@
-#
-#
-#
-from mcr.microsoft.com/dotnet/sdk:6.0 as build
+# #
+# #
+# #
+# from mcr.microsoft.com/dotnet/sdk:6.0 as build
 
-#
-workdir /app
+# #
+# workdir /app
 
-##
-copy *.sln ./
-copy SneakerApi/*.csproj SneakerApi/
-copy StoreBL/*.csproj StoreBL/
-copy StoreDL/*.csproj StoreDL/
-copy StoreModel/*.csproj StoreModel/
+# ##
+# copy *.sln ./
+# copy SneakerApi/*.csproj SneakerApi/
+# copy StoreBL/*.csproj StoreBL/
+# copy StoreDL/*.csproj StoreDL/
+# copy StoreModel/*.csproj StoreModel/
 
-#
-copy . ./
+# #
+# copy . ./
 
-#
-run dotnet build
+# #
+# run dotnet build
 
-#
-run dotnet publish -c Release -o publish
+# #
+# run dotnet publish -c Release -o publish
 
-#
-#
-#
+# #
+# #
+# #
 
-#
+# #
 from mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 
 workdir /app
-copy --from=build /app/publish ./
+
+copy /publish ./
 
 #
-cmd ["dotnet", "SneakerApi.dll"]
+entrypoint ["dotnet", "SneakerApi.dll"]
 
-expose 80
+#Change port to 5000
+expose 5000
+
+#We need to change our ASP.Net apllication to also start listening to 5000
+env ASPNETCORE_URLS=https://+:5000
