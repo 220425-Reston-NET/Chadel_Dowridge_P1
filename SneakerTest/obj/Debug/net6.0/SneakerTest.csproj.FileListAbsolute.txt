@@ -1,0 +1,6 @@
+C:\Users\chade\Revature\Poke\SneakerTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\chade\Revature\Poke\SneakerTest\obj\Debug\net6.0\SneakerTest.csproj.AssemblyReference.cache
+C:\Users\chade\Revature\Poke\SneakerTest\obj\Debug\net6.0\SneakerTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chade\Revature\Poke\SneakerTest\obj\Debug\net6.0\SneakerTest.AssemblyInfoInputs.cache
+C:\Users\chade\Revature\Poke\SneakerTest\obj\Debug\net6.0\SneakerTest.AssemblyInfo.cs
+C:\Users\chade\Revature\Poke\SneakerTest\obj\Debug\net6.0\SneakerTest.csproj.CoreCompileInputs.cache
