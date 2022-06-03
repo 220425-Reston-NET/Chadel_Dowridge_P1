@@ -62,8 +62,6 @@ jobs:
 
 
       
-      
-      
       # Builds and Analyzes the tokens and runs powershell
       - name: Build and analyze
         env:

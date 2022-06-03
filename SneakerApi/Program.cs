@@ -11,7 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IRepository<Sneaker>, SQLSneakerRepository>(repo => new SQLSneakerRepository(Environment.GetEnvironmentVariable("Connection_String")));
+
+//Environment.GetEnvironmentVariable("Connection_String")
+
+builder.Services.AddScoped<IRepository<Sneaker>, SQLSneakerRepository>(repo => new SQLSneakerRepository(builder.Configuration.GetConnectionString("Chadel Dowridge")));
 builder.Services.AddScoped<IStoreBL, StoreBL2>();
 // builder.Services.AddScoped<IStoreBL, StoreBL>();
 // builder.Services.AddScoped<>();

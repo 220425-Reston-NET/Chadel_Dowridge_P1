@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBL", "StoreBL\StoreBL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerApi", "SneakerApi\SneakerApi.csproj", "{135A49DF-C06F-47E2-A85E-DB7403AA5FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerTest", "SneakerTest\SneakerTest.csproj", "{9C299524-BF6A-4967-B3FC-1F80115FBF85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{135A49DF-C06F-47E2-A85E-DB7403AA5FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{135A49DF-C06F-47E2-A85E-DB7403AA5FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{135A49DF-C06F-47E2-A85E-DB7403AA5FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C299524-BF6A-4967-B3FC-1F80115FBF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C299524-BF6A-4967-B3FC-1F80115FBF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C299524-BF6A-4967-B3FC-1F80115FBF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C299524-BF6A-4967-B3FC-1F80115FBF85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
