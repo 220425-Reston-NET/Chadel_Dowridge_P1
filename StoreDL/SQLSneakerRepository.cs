@@ -43,6 +43,11 @@ namespace StoreDL
             throw new NotImplementedException();
         }
 
+        public List<Store> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         //============================== Select SQL From Sneaker ==================================
         public List<Sneaker> GetAllChoose()
         {

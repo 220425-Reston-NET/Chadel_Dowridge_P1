@@ -41,6 +41,10 @@ namespace StoreDL
             throw new NotImplementedException();
         }
 
+        List<Store> IRepository<Sneaker>.GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

@@ -57,8 +57,12 @@ namespace StoreDL
             //Saves this information to the database
             string jsonString = JsonSerializer.Serialize(listOfSneaker, new JsonSerializerOptions{WriteIndented = true});
             File.WriteAllText(_filepath, jsonString);
-        }        
+        }
 
+        List<Store> IRepository<Sneaker>.GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

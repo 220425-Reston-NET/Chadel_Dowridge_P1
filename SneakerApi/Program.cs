@@ -16,9 +16,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRepository<Sneaker>, SQLSneakerRepository>(repo => new SQLSneakerRepository(builder.Configuration.GetConnectionString("Chadel Dowridge")));
 builder.Services.AddScoped<IStoreBL, StoreBL2>();
-// builder.Services.AddScoped<IStoreBL, StoreBL>();
-// builder.Services.AddScoped<>();
-// builder.Services.AddScoped<>();
+builder.Services.AddScoped<IRepository<Store>, SQLStoreRepository>(repo => new SQLStoreRepository(builder.Configuration.GetConnectionString("Chadel Dowridge")));
+builder.Services.AddScoped<IStoreBL, StoreBL2>();
 
 var app = builder.Build();
 

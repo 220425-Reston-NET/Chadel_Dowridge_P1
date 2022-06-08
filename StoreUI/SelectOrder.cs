@@ -3,24 +3,19 @@ using StoreModel;
 
 namespace StoreUI
 {
-    public class SelectShoe : IMenu
+    public class SelectOrder : IMenu
     {
-        //=====Dependency Injection=====
+        //=====Dependency Injection===========
         private ISelectBL _selectBL;
         private IStoreBL _storeBL;
-        private StoreBL2 storeBL2;
+        private StoreBL3 storeBL2;
 
-        public SelectShoe(SelectBL selectBL, StoreBL2 storeBL2)
+        public SelectOrder(SelectBL selectBL, StoreBL3 storeBL2)
         {
             this.storeBL2 = storeBL2;
         }
+        //================================================
 
-        // public SelectBL(ISelectBL p_selectBL, ISelectBL p_sneakerBL)
-        // {
-        //     _selectBL = p_selectBL;
-        //     _storeBL = p_storeBL;
-        // }
-        //==============================
         public void Display()
         {
             //This will display all Shoes Styles currently availbe in the datbase
@@ -40,7 +35,7 @@ namespace StoreUI
             //Logic to select a specific ability in our listOfAbility variable
             Ability foundedSneaker = _storeBL.SearchAbilityByName(userInput);
              
-             //Validation for userInput
+            //Validation for userInput
             if (foundedSneaker != null)
             {
                 // Logic adds the ability to the founded pokemon using the abilities property in its model
@@ -54,7 +49,6 @@ namespace StoreUI
                 Console.ReadLine();
                 return "SelectAbility";
             }
-
 
             //Logic to save that information permanently (UPDATING)
             Console.ReadLine();

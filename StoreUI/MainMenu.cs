@@ -9,6 +9,7 @@ namespace StoreUI
         {
             Console.WriteLine("Welcome to Main Menu!");
             Console.WriteLine("What Can I Do For You?");
+            Console.WriteLine("[4] - Purchase a Shoe");
             Console.WriteLine("[3] - View Store Inventory");
             Console.WriteLine("[2] - Add a New Shoe");
             Console.WriteLine("[1] - Search a Shoe ");
@@ -19,6 +20,16 @@ namespace StoreUI
         public string YourChoice()
         {
             string userInput = Console.ReadLine();
+            
+            //=============== Purchase a Shoe ===========================================
+            if (userInput == "4")
+            {
+                //We return what we think the menu should display next when that person picked that choice
+                //In this case it will display the AddPokemon menu instead
+                return "AddCustomer";
+                
+            }
+            //=============== View Store Shoe Inventory =================================
             if (userInput == "3")
             {
                 //We return what we think the menu should display next when that person picked that choice
@@ -26,18 +37,25 @@ namespace StoreUI
                 return "AddCustomer";
 
             }
+            
+            //============== Add a New Sneaker Function ================================
             if (userInput == "2")
             {
                 //We return what we think the menu should display next when that person picked that choice
                 //In this case it will display the AddPokemon menu instead
-                return "AddCustomer";
+                //Logic : Add Sneaker
+                return "AddSneaker";
 
             }
+            
+            //============== Search a Sneaker Function ================================
             else if (userInput == "1")
             {
                 //Logic : Search Customer 
                 return "SearchCustomer";
             }
+
+             //============== "Exit" Function ========================================
             else if (userInput == "0")
             {
                 //Exit functionality
@@ -60,16 +78,9 @@ namespace StoreUI
 
 //=============================================================================================================
 
-//                                              Old Menu                                                      \\
+//                                              Old Menu : Checkout Function                                                     \\
 
 //===============================================================================================================
-// Console.WriteLine("Welcome to Main Menu ");
-// Console.WriteLine("What can I do for you");
-// Console.WriteLine("[1] - Search for a Sneaker?");
-// Console.WriteLine("[2] - Buy a Sneaker?");
-// Console.WriteLine("[3] - Add a Sneaker?");
-// Console.WriteLine("[4] - Checkout?");
-// Console.WriteLine("[0] - To exit the store ");
 
 
 // // Checkout Function Below

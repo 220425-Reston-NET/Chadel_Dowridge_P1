@@ -33,39 +33,23 @@ while (repeat)
         Log.Information("User going to Main Menu");
         menu = new MainMenu();
     }
-    else if (ans == "AddCustomer")
+    else if (ans == "AddSneaker")
     {
-        Log.Information("User Added a Customer");
-        menu = new AddCustomer(new StoreBL2(new SQLSneakerRepository(Configuration.GetConnectionString("Chadel Dowridge"))));
+        Log.Information("User Added a Sneaker");
+        menu = new AddSneaker(new StoreBL2(new SQLSneakerRepository(Configuration.GetConnectionString("Chadel Dowridge"))));
     }
     else if(ans == "SearchCustomer")
     {
         Log.Information("User Selected a shoe");
         menu = new SearchCustomer(new StoreBL2(new SQLSneakerRepository(Configuration.GetConnectionString("Chadel Dowridge"))));
     }
-    else if(ans == "SelectShoe")
-    {
-        Log.Information("User Select for a shoe");
-        menu = new SelectShoe(new SelectBL(new SneakerAbilityRepository()), new StoreBL2(new SneakerAbilityRepository()));
-    }
+    // else if(ans == "SelectShoe")
+    // {
+    //     Log.Information("User Select for a shoe");
+    //     menu = new SelectOrder(new SelectBL(new SneakerAbilityRepository()), new StoreBL2(new SneakerAbilityRepository()));
+    // }
     else if (ans == "Exit")
     {
         repeat = false;
     }
 }
-
-
-
-//=========================Old Code===============================================
-// Creating an object
-// Sneaker pokeObj = new Sneaker();
-// pokeObj.SneakerID = 100;
-// pokeObj.Name = "Charmander";
-// Console.WriteLine(pokeObj.SneakerID);
-
-
-// pokeObj.SneakerID = -10;
-// Console.WriteLine(pokeObj.SneakerID);
-
-
-// Console.Clear();

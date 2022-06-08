@@ -240,3 +240,11 @@
 2022-06-01 09:26:53.964 -04:00 [INF] User Added a Customer
 2022-06-01 09:27:14.799 -04:00 [INF] User going to Main Menu
 2022-06-01 09:30:35.362 -04:00 [INF] User Selected a shoe
+2022-06-05 21:23:59.743 -04:00 [INF] User Selected a shoe
+2022-06-05 21:25:32.138 -04:00 [INF] User going to Main Menu
+2022-06-05 21:25:34.918 -04:00 [INF] User Added a Customer
+2022-06-05 21:29:07.771 -04:00 [INF] User Selected a shoe
+2022-06-05 21:29:09.862 -04:00 [INF] User going to Main Menu
+2022-06-05 21:30:58.496 -04:00 [INF] User Added a Customer
+2022-06-07 14:28:14.282 -04:00 [INF] User Added a Sneaker
+2022-06-07 14:31:45.454 -04:00 [INF] User Added a Sneaker

@@ -34,5 +34,6 @@ namespace StoreDL
         /// <param name="p_resource">This is the resource it is updating</param>
         void Update(T p_resource);
         void AddSneaker(Sneaker p_sneaker);
+        List<Store> GetAll();
     }
 }
